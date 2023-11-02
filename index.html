@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    <main>
+<img id="image-doctor" src="images/undraw_medicine_b-1-ol.svg" alt="">
+<section id="calculator">
+<form id="form">
+    <h1>Calculadora - IMC</h1>
+  <div class="input-box">
+    <label for="height">Altura em metros</label>
+    <div class="input-field">
+        <i class="fa-solid fa-weight-hanging"></i>
+        <input type="number" step="0.01" id="height" name="height" required>
+        <span>m</span>
+  
+</div>    
+</div>
+
+  <div class="input-box">
+    <label for="weight">Peso em kg</label>
+
+    <div class="input-field">
+        <i class="fa-solid fa-ruler"></i>
+        <input type="number" id="weight" name="weight" required>
+        <span>Kg</span>
+    </div>
+  </div>
+  <button id="calcular">Calcular</button>
+</form>
+    <div id="infos" class="hidden">
+        <div id="result">
+            <div id="bmi">
+                <span id="value"></span>
+                <span>Seu IMC</span>
+            </div>
+            <div id="description">
+                <span></span>
+            </div>
+        </div>
+
+            <div id="more-info">
+<a href="https://www.tjdft.jus.br/informacoes/programas-projetos-e-acoes/pro-vida/dicas-de-saude/pilulas-de-saude/o-que-o-indice-de-massa-corporal-imc-diz-sobre-sua-saude#:~:text=Criado%20no%20século%2019%20pelo,não%20com%20o%20peso%20ideal.&text=Muitas%20pessoas%20buscam%20descobrir%20seu,específica%20ou%20uma%20atividade%20física.">Mais informações sobre IMC
+    <i class="fa-solid fa-up-right-from-square"></i>
+</a>
+            </div>
+    </div>
+</section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
